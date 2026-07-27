@@ -78,6 +78,13 @@ public class Book {
      */
     public void displayBook() {
         System.out.printf("| %-6d | %-25s | %-20s | %-15s | %-9s |%n",
-                bookId, bookName, authorName, category, getStatus());
+                bookId, fit(bookName, 25), fit(authorName, 20), fit(category, 15), getStatus());
+    }
+
+    /**
+     * Shortens a value so that it always fits inside its table column.
+     */
+    private static String fit(String value, int width) {
+        return value.length() <= width ? value : value.substring(0, width - 3) + "...";
     }
 }

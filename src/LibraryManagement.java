@@ -260,7 +260,7 @@ public class LibraryManagement {
     private static int readInt(String message) {
         while (true) {
             System.out.print(message);
-            String input = scanner.nextLine().trim();
+            String input = readLine();
             try {
                 return Integer.parseInt(input);
             } catch (NumberFormatException e) {
@@ -275,12 +275,25 @@ public class LibraryManagement {
     private static String readNonEmptyText(String message) {
         while (true) {
             System.out.print(message);
-            String input = scanner.nextLine().trim();
+            String input = readLine();
             if (!input.isEmpty()) {
                 return input;
             }
             System.out.println("Error: This field cannot be empty.");
         }
+    }
+
+    /**
+     * Reads one trimmed line of input. When the input stream is closed
+     * (for example Ctrl+D) the program exits instead of crashing.
+     */
+    private static String readLine() {
+        if (!scanner.hasNextLine()) {
+            System.out.println("\nInput closed. Exiting the Library Management System.");
+            scanner.close();
+            System.exit(0);
+        }
+        return scanner.nextLine().trim();
     }
 
     private static void printTableHeader() {
