@@ -66,3 +66,6 @@ Sources Root if needed, then right-click `LibraryManagement` → **Run 'LibraryM
 
 Both classes are in the default package, so no `package` statement or folder nesting
 is required.
+
+Run 1st paste this in terminal---> javac -d out src/*.java
+then paste this---> java -cp out LibraryManagement
