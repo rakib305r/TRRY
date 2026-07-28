@@ -1,10 +1,5 @@
-/**
- * Represents a single book in the library.
- * Holds the book details and its availability status.
- */
 public class Book {
 
-    // Fields (kept private to follow encapsulation)
     private int bookId;
     private String bookName;
     private String authorName;
