@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasheed Library</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-kaaba"></i>
+                <span>Nasheed Library</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#nasheeds">Nasheeds</a></li>
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search Nasheeds...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="#" class="icon"><i class="fa-regular fa-heart"></i></a>
+                <!-- Sign In & Register buttons linking to signin.html -->
+                <a href="signin.html" class="signin">Sign In</a>
+                <a href="signin.html" class="signup">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Beautiful Islamic Nasheeds</h1>
+            <p>Listen to peaceful and inspiring Islamic nasheeds from talented reciters around the world.</p>
+            <div class="hero-btn">
+                <a href="#nasheeds" class="btn-primary">Explore Library</a>
+                <a href="#featured" class="btn-secondary">Trending</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories" id="nasheeds">
+        <div class="section-title">
+            <h2>Categories</h2>
+            <p>Browse nasheeds by category</p>
+        </div>
+        <div class="category-grid">
+            <div class="category-card">
+                <i class="fa-solid fa-microphone"></i>
+                <h3>Vocal Only</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Popular</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-moon"></i>
+                <h3>Ramadan Special</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-child-reaching"></i>
+                <h3>Kids Corner</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-hands-praying"></i>
+                <h3>Dua & Zikr</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Global Vocals</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Emotional & Soft</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-book-quran"></i>
+                <h3>Quranic Recitation</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h3>Classic Classics</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Islamic Motivational</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-kaaba"></i>
+                <h3>Hajj & Umrah</h3>
+            </div>
+            <div class="category-card">
+                <i class="fa-solid fa-bed"></i>
+                <h3>Sleep & Peaceful</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED NASHEEDS SECTION -->
+    <section class="featured" id="featured">
+        <div class="section-title">
+            <h2>Featured Nasheeds</h2>
+            <p>Listen to our top peaceful selections</p>
+        </div>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=600" alt="Mercy to Mankind">
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="content">
+                    <h3>Mercy to Mankind</h3>
+                    <p>Peaceful Vocal Collection</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (4.9)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=600" alt="Light Upon Light">
+                    <span class="badge">Popular</span>
+                </div>
+                <div class="content">
+                    <h3>Light Upon Light</h3>
+                    <p>Soulful Arabic Vocal</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> (4.8)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=600" alt="Way of the Tears">
+                    <span class="badge">New</span>
+                </div>
+                <div class="content">
+                    <h3>Way of the Tears</h3>
+                    <p>Heart Touching Zikr</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (5.0)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=600" alt="The Promised Peace">
+                    <span class="badge">Must Listen</span>
+                </div>
+                <div class="content">
+                    <h3>The Promised Peace</h3>
+                    <p>Heartfelt Vocal Harmony</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (4.9)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=600" alt="Tala'al Badru Alayna">
+                    <span class="badge">Classical</span>
+                </div>
+                <div class="content">
+                    <h3>Tala'al Badru Alayna</h3>
+                    <p>Traditional Acoustic Vocal</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (5.0)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=600" alt="Forgive Me Allah">
+                    <span class="badge">Top Rated</span>
+                </div>
+                <div class="content">
+                    <h3>Forgive Me Allah</h3>
+                    <p>Deep Reflection Track</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> (4.7)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=600" alt="Asma Ul Husna">
+                    <span class="badge">Spiritual</span>
+                </div>
+                <div class="content">
+                    <h3>Asma Ul Husna</h3>
+                    <p>99 Names of Allah</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (5.0)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?q=80&w=600" alt="Subhan Allah">
+                    <span class="badge">Calming</span>
+                </div>
+                <div class="content">
+                    <h3>Subhan Allah</h3>
+                    <p>Praise & Worship Vocal</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i> (4.8)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=600" alt="Mother's Love">
+                    <span class="badge">Heartfelt</span>
+                </div>
+                <div class="content">
+                    <h3>Mother's Love</h3>
+                    <p>Tribute Vocal Track</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> (4.9)
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                        <a href="#"><i class="fa-regular fa-bookmark"></i> Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP RECITERS SECTION -->
+    <section class="reciters" id="artists">
+        <div class="section-title">
+            <h2>Top Reciters</h2>
+            <p>Popular artists in our community</p>
+        </div>
+        <div class="reciter-grid">
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300" alt="Reciter">
+                <h3>Sheikh Ahmed</h3>
+                <p>120+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300" alt="Reciter">
+                <h3>Muhammad Al-Kurdi</h3>
+                <p>85+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300" alt="Reciter">
+                <h3>Youssef Hassan</h3>
+                <p>95+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=300" alt="Reciter">
+                <h3>Zayn Omar</h3>
+                <p>60+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=300" alt="Reciter">
+                <h3>Hamza Abdullah</h3>
+                <p>110+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=300" alt="Reciter">
+                <h3>Tariq Al-Mansoor</h3>
+                <p>45+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=300" alt="Reciter">
+                <h3>Bilal Mustafa</h3>
+                <p>75+ Nasheeds</p>
+            </div>
+            <div class="reciter-card">
+                <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=300" alt="Reciter">
+                <h3>Ibrahim Al-Sayed</h3>
+                <p>130+ Nasheeds</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get notified when new nasheeds and reciters are added.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Nasheed Library</h3>
+                <p>Your ultimate destination for high-quality, peaceful Islamic audio and nasheeds without instruments.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#nasheeds">Nasheeds</a>
+                <a href="#artists">Artists</a>
+                <a href="#collections">Collections</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Categories</h3>
+                <a href="#">Vocals Only</a>
+                <a href="#">Ramadan Special</a>
+                <a href="#">Kids Nasheeds</a>
+                <a href="#">Duas & Supplications</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Support</h3>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nasheed Library. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
